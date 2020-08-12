@@ -1,0 +1,94 @@
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    background-color: #ffffff2b!important;
+}
+.navbar {
+    font-size: 0.8rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0rem 0rem !important;
+}
+
+a.navbar-brand img{
+    margin-left: 100%;
+    width: 1.4vh !important;
+    height: 1.5vh !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(0 0 0 / 0%) !important;
+    }
+
+/*This is where the magic is. The process works by creating a div with a height and width of 100% of the window size. You then set that div's position to fixed so it's always in the right spot on loading. Give the div a background image of whatever you like*/
+
+/*To scroll with the page, just set the position to absolute instead of fixed*/
+#full-image {
+    background:url(https://live.staticflickr.com/65535/50065879747_c8c4d58432_k.jpg) no-repeat center;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#full-image h1 {
+    color: white;
+    font-size: 1em;
+    margin-top: 25%;
+    text-align: center;
+    text-shadow: 0 0 30px #000;
+}
+
+#full-image p {
+    color: white;
+    font-size: 2em;
+    margin-top: 2%;
+    text-align: center;
+    text-shadow: 0 0 20px #000;
+}
+
+#badge{
+    background-size: 12px;
+    text-align: center;
+}       
+.avatar {
+    margin-top: 17%;
+    width: 125px;
+    height: 125px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+
+.form-control {
+    display: block;
+    width: 12% !important;
+    height: calc(2.5em + -1.25rem + 5px) !important;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff !important;
+    background-color:#ffffff42 !important;
+    background-clip: padding-box;
+    border: 1px solid #ffffff38 !important;
+    border-radius: 0.25rem !important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-left: 44%;
+    margin-top: 2%;
+}
+
+::placeholder {
+    color: #ffffff81 !important;
+}
+
+#submit
+    {    
+        visibility: hidden;
+    }
